@@ -2,7 +2,6 @@ package CrudServices;
 
 import Entities.Developer;
 import Connection.ConnectionToDB;
-import Entities.Project;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -153,7 +152,7 @@ public class DeveloperCrudService {
         int salary = rs.getInt("salary");
 
         Developer result = new Developer(name, sex, salary);
-        result.setID(id);
+        result.setId(id);
 
         return result;
     }
@@ -163,7 +162,7 @@ public class DeveloperCrudService {
         updateSt.setString(1, developer.getName());
         updateSt.setString(2, developer.getSex());
         updateSt.setInt(3, developer.getSalary());
-        updateSt.setLong(4, developer.getID());
+        updateSt.setLong(4, developer.getId());
 
         return updateSt.executeUpdate();
     }

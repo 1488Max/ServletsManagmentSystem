@@ -3,14 +3,14 @@ package Entities;
 import lombok.Data;
 
 public @Data class Developer {
-    private long ID;
+    private long id;
     private String name;
     private String sex;
     private int salary;
 
 
-    public Developer(long ID, String name, String sex, int salary) {
-        this.ID = ID;
+    public Developer(long id, String name, String sex, int salary) {
+        this.id = id;
         this.name = name;
         this.sex = sex;
         this.salary = salary;

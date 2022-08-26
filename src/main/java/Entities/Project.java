@@ -2,10 +2,8 @@ package Entities;
 
 import lombok.Data;
 
-import java.time.LocalDate;
-
 public @Data class Project {
-    private long ID;
+    private long id;
     private String name;
     private String timeOfCreation;
     private long customerId;

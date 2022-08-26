@@ -3,7 +3,7 @@ package Entities;
 import lombok.Data;
 
 public @Data class Company {
-private long ID;
+private long id;
 private String name;
 private String area;
 }

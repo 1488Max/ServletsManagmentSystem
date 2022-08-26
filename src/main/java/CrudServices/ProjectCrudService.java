@@ -136,7 +136,7 @@ public class ProjectCrudService {
         }
         Project result = new Project(rs.getString("name"),rs.getString("time_of_creation"),
                 rs.getLong("customer_id"),rs.getLong("company_id"));
-        result.setID(id);
+        result.setId(id);
 
         return result;
     }

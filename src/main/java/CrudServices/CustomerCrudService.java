@@ -88,7 +88,7 @@ public class CustomerCrudService {
 
 
         Customer result = new Customer(name, surname);
-        result.setID(id);
+        result.setId(id);
 
         return result;
     }
@@ -97,7 +97,7 @@ public class CustomerCrudService {
 
         updateSt.setString(1, customer.getName());
         updateSt.setString(2, customer.getSurname());
-        updateSt.setLong(3, customer.getID());
+        updateSt.setLong(3, customer.getId());
          return updateSt.executeUpdate();
 
     }
